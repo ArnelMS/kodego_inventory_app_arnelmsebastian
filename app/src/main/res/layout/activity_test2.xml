@@ -27,7 +27,8 @@
         app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067" />
+        app:layout_constraintVertical_bias="0.067"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/btnGetName"
