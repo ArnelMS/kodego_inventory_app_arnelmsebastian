@@ -16,8 +16,16 @@ class TestActivity : AppCompatActivity() {
 
         binding.btnGetName.setOnClickListener() {
 //            Toast.makeText(applicationContext, "Hello from Toast", Toast.LENGTH_LONG).show()
-            var name : String = binding.etvName.text.toString().uppercase()
-            binding.textName.text = "Hi $name!"
+            var name: String = binding.etvName.text.toString().uppercase()
+            binding.txtViewName.text = "Hi $name!"
+
+            binding.rgButtonGroup.setOnCheckedChangeListener { rgButton, checkedOptions ->
+                when (checkedOptions) {
+                    R.id.rb_Button01 -> Toast.makeText(applicationContext,"Button 1 Selected!", Toast.LENGTH_SHORT).show()
+                    R.id.rb_Button02 -> Toast.makeText(applicationContext,"Button 2 Selected!", Toast.LENGTH_SHORT).show()
+                    R.id.rb_Button03 -> Toast.makeText(applicationContext,"Button 3 Selected!", Toast.LENGTH_SHORT).show()
+                }
+            }
         }
     }
 }
