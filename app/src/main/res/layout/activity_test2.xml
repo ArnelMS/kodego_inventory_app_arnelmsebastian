@@ -73,8 +73,56 @@
         app:layout_constraintTop_toBottomOf="@+id/txtViewName" />
 
 
+    <RadioGroup
+        android:id="@+id/rgButtonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="136dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_Button01"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#E4E4E4"
+            android:backgroundTint="#E4E4E4"
+            android:text="Button 1"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/rb_Button02"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="#E4E4E4"
+            android:backgroundTint="#E4E4E4"
+            android:text="Button 2"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/rb_Button03"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="#E4E4E4"
+            android:backgroundTint="#E4E4E4"
+            android:text="Button 3"
+            android:textAlignment="center" />
+
+    </RadioGroup>
+
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/switchButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
@@ -138,7 +186,7 @@
         app:layout_constraintVertical_bias="0.394" />
 
     <Spinner
-        android:id="@+id/spnr_01"
+        android:id="@+id/spinnerId"
         android:layout_width="368dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
@@ -181,53 +229,5 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <RadioGroup
-        android:id="@+id/rgButtonGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="136dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <RadioButton
-            android:id="@+id/rb_Button01"
-            android:layout_width="126dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:background="#E4E4E4"
-            android:backgroundTint="#E4E4E4"
-            android:text="Button 1"
-            android:textAlignment="center" />
-
-        <RadioButton
-            android:id="@+id/rb_Button02"
-            android:layout_width="126dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:background="#E4E4E4"
-            android:backgroundTint="#E4E4E4"
-            android:text="Button 2"
-            android:textAlignment="center" />
-
-        <RadioButton
-            android:id="@+id/rb_Button03"
-            android:layout_width="126dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:background="#E4E4E4"
-            android:backgroundTint="#E4E4E4"
-            android:text="Button 3"
-            android:textAlignment="center" />
-
-    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
