@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">inventoryapp.sebastian</string>
+    <string name="login">Log in</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="linkedin_sign_in">LinkedIn Sign In</string>
+    <string name="google_sign_in">Google Sign in</string>
+    <string name="facebook_sign_in">Facebook Sign in</string>
+    <string name="no_account_sign_up">No Acocunt? Sign Up</string>
+    <string name="helper_text">This is a helper text</string>
 </resources>
