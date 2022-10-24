@@ -5,67 +5,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
+    android:foregroundTint="#03C877"
     tools:context=".HomeActivity">
 
-    <TextView
-        android:id="@+id/txtView_body"
-        android:layout_width="373dp"
-        android:layout_height="137dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique gravida sem. Maecenas non turpis ultricies, vehicula metus et, ultricies neque. Morbi facilisis, neque quis laoreet pulvinar, ante ligula iaculis purus, in fermentum mauris ante vel diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In interdum erat ut odio egestas tempor id et elit. Suspendisse sagittis gravida erat. Maecenas consectetur felis placerat neque cursus, in tempus augue dapibus. Nunc fermentum sodales nisi id porttitor. Nulla euismod nisi non pharetra vulputate. Donec accumsan condimentum nulla non hendrerit. Vivamus vitae nunc rhoncus, semper velit id, ornare nisl. Proin semper tempor arcu. Ut hendrerit fringilla dolor a sollicitudin. Sed tempor quam et tortor suscipit, ac consectetur eros volutpat."
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtview_Welcome"
-        app:layout_constraintVertical_bias="0.865" />
-
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="379dp"
-        android:paddingStart="22dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/myRecycler"
+        android:layout_width="407dp"
+        android:layout_height="460dp"
+        android:layout_marginTop="12dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="148dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="276dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01"
-        app:srcCompat="@drawable/icon_istak" />
-
-    <TextView
-        android:id="@+id/txtview_Welcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome!!"
-        android:textColor="#000000"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.414" />
-
-    <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/imghomecoverphoto"
         android:layout_width="411dp"
         android:layout_height="247dp"
+        android:contentDescription="TODO"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.078"
+        app:layout_constraintVertical_bias="0.061"
         app:srcCompat="@drawable/warehouse_home" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="143dp"
+        android:layout_height="21dp"
+        android:text="Product List"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imghomecoverphoto" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#03832C"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/myRecycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
