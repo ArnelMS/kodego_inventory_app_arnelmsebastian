@@ -145,7 +145,8 @@ class HomeActivity : AppCompatActivity() {
             "itemheinz",
             "itempalmolive",
             "itemsafeguard",
-            "itemtide"
+            "itemtide",
+            "itemcornedbeef"
         )
         val spinnerAdapter = ArrayAdapter(applicationContext, R.layout.textview_xml, images)
         binding.spnimage.adapter = spinnerAdapter
