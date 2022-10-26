@@ -17,12 +17,12 @@ class ViewPagerActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val images = listOf(
-            R.drawable.ic_clock_black_24dp,"This is a Black Clock",
-            R.drawable.ic_m3_chip_close,"This is an X",
-            R.drawable.ic_mtrl_checked_circle,"This is a Check Mark",
-            R.drawable.ic_keyboard_black_24dp, "This is a Keyboard"
+            R.drawable.ic_clock_black_24dp,
+            R.drawable.ic_m3_chip_close,
+            R.drawable.ic_mtrl_checked_circle,
+            R.drawable.ic_keyboard_black_24dp,
         )
-        val adapter = ViewPagerAdapter("Test", "Test Message")
+        val adapter = ViewPagerAdapter(images)
         binding.viewPagerView.adapter = adapter
 
         TabLayoutMediator(binding.tabLayout, binding.viewPagerView) { tab, position ->

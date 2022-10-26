@@ -1,12 +1,11 @@
 package layout
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.kodego.activity.app.inventoryappsebastian.databinding.ItemViewPagerBinding
 
-class ViewPagerAdapter (val images: List<Int>, var textViewPagerDesc: List<String>): RecyclerView.Adapter<ViewPagerAdapter.ViewPagerViewHolder>() {
+class ViewPagerAdapter(val images: List<Int>): RecyclerView.Adapter<ViewPagerAdapter.ViewPagerViewHolder>() {
 
     inner class ViewPagerViewHolder(val binding: ItemViewPagerBinding):RecyclerView.ViewHolder(binding.root)
 
@@ -19,10 +18,11 @@ class ViewPagerAdapter (val images: List<Int>, var textViewPagerDesc: List<Strin
 
     override fun onBindViewHolder(holder: ViewPagerViewHolder, position: Int) {
         val image = images[position]
+//        val texts = textViewPagerDesc[position]
 //        var txtViewPagerText = textViewPagerDesc[position]
         holder.binding.apply {
             imgViewPager.setImageResource(image)
-            txtViewPagerText.text = textViewPagerDesc[position].toString()
+//            txtViewPagerText.text = textViewPagerDesc[position].toString()
         }
     }
 
