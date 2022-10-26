@@ -9,4 +9,6 @@
     <string name="facebook_sign_in">Facebook Sign in</string>
     <string name="no_account_sign_up">No Acocunt? Sign Up</string>
     <string name="helper_text">This is a helper text</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
