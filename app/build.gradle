@@ -45,6 +45,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2'// New Addition
     implementation 'com.google.android.gms:play-services-maps:18.1.0'// New Addition to use SplashActivity Click "Sync Now"
+    implementation 'com.karumi:dexter:6.2.2' // PERMISSION -> CAMERA
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'

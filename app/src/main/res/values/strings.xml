@@ -11,4 +11,6 @@
     <string name="helper_text">This is a helper text</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-</resources>
+    <string name="custom_dialog_title">Custom Dialog Title</string>
+    <string name="custom_dialog_message">This is a custom dialog message</string>
+</resources>    
