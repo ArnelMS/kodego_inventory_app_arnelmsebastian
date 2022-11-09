@@ -13,6 +13,7 @@ import android.provider.MediaStore
 import android.provider.Settings
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import com.bumptech.glide.Glide
 import com.karumi.dexter.Dexter
 import com.karumi.dexter.PermissionToken
 import com.karumi.dexter.listener.PermissionDeniedResponse
@@ -25,6 +26,7 @@ import com.kodego.activity.app.inventoryappsebastian.databinding.SampleCustomDia
 class TestActivity4 : AppCompatActivity() {
 
     private lateinit var binding: ActivityTest4Binding
+    private val image :String = "https://www.clipartmax.com/png/middle/46-466388_iron-man-png.png"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,6 +46,12 @@ class TestActivity4 : AppCompatActivity() {
         binding.btnOpenGallery.setOnClickListener() {
             showGallery()
         }
+
+        Glide.with(this)
+            .load(image)
+//            .circleCrop()
+            .into(binding.imgImage)
+
     }
 
     private fun showGallery() {
@@ -77,18 +85,16 @@ class TestActivity4 : AppCompatActivity() {
     private fun showCamera() {
         Dexter.withContext(this).withPermission(
             Manifest.permission.CAMERA
-        ).withListener(object : PermissionListener {
+        ).withListener(object : PermissionListener{
             override fun onPermissionGranted(p0: PermissionGrantedResponse?) {
                 val cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
 //                startActivity(cameraIntent)
                 cameraLauncher.launch(cameraIntent)
-                Toast.makeText(applicationContext, "Camera Permission Approved", Toast.LENGTH_SHORT)
-                    .show()
+                Toast.makeText(applicationContext, "Camera Permission Approved", Toast.LENGTH_SHORT).show()
             }
 
             override fun onPermissionDenied(p0: PermissionDeniedResponse?) {
-                Toast.makeText(applicationContext, "Camera Permission Denied", Toast.LENGTH_SHORT)
-                    .show()
+                Toast.makeText(applicationContext, "Camera Permission Denied", Toast.LENGTH_SHORT).show()
                 gotoSettings()
             }
 
