@@ -29,6 +29,9 @@ class TestActivity5 : AppCompatActivity() {
         binding.btnCamera2.setOnClickListener() {
             showCamera()
         }
+        binding.btnGallery2.setOnClickListener() {
+            showCamera()
+        }
     }
 
     private fun showCamera() {

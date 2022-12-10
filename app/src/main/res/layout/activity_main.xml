@@ -57,17 +57,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.221"
-        app:srcCompat="@drawable/username_icon32" />
+        app:srcCompat="@drawable/username_icon32"
+        app:tint="#F3F2F2" />
 
     <ImageButton
         android:id="@+id/imgbtn_facebook"
-        android:layout_width="414dp"
-        android:layout_height="61dp"
+        android:layout_width="364dp"
+        android:layout_height="51dp"
         android:backgroundTint="#00FFFFFF"
         android:contentDescription="LoginWithFacebook"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.595"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgbtn_google"
         app:layout_constraintVertical_bias="0.0"
@@ -104,14 +105,15 @@
 
     <ImageButton
         android:id="@+id/imgbtn_google"
-        android:layout_width="411dp"
-        android:layout_height="56dp"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
         android:background="#151515"
         android:backgroundTint="#00776E6E"
         android:contentDescription="LoginWithGoogle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_loginbutton"
         app:layout_constraintVertical_bias="0.0"
@@ -147,7 +149,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.287"
-        app:srcCompat="@drawable/passwordlock_icon32" />
+        app:srcCompat="@drawable/passwordlock_icon32"
+        app:tint="#FFFFFF" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -159,5 +162,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_createnewaccount"
         app:srcCompat="@drawable/surestocklogohorizontal_white" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
